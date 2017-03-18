@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1">	
+	<title>Sti Panel</title>
+	<!-- Bootstrap -->
+	<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+	<link href="css/style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+	<script src="http://code.jquery.com/jquery.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+  <div class="container">
+    <div class="header">
+      <img src="images/sti.svg" class="logo" alt="Sti">
+    </div>
+   <article>
+     <h3 id="A">Overview</h3>
+     <h3 id="B">Details</h3>					
+     <div class="contentA">
+     <p>
+       <h5>First Name: Jane	
+       <br/>Last Name: Doe
+       <br/>Gender: Female 	
+       <br/>Occupation: Retired
+       <br/>Age: 70
+       <br/>Location: Toronto,Ontario	
+       <br/>Medications: CRESTOR
+       <br/>Image:</h5> <img src="images/janedoe.jpg" class="profileimg"></h4>
+
+       <h4> Summary: </h4>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus diam massa, consequat in dui
+	sed, aliquam placerat nibh. Fusce in ultrices lectus, convallis tincidunt elit. Curabitur faucibus
+	sem vitae ex egestas iaculis. Suspendisse eget tempor nulla. Cras et convallis urna, sed aliquam
+	metus. Pellentesque consequat finibus turpis quis semper. Curabitur bibendum sem ut massa
+	tincidunt, at dictum mi convallis. Duis et ipsum at leo pulvinar laoreet sit amet id ligula.
+	Pellentesque in libero convallis augue condimentum aliquet eu a elit. Sed eu diam rhoncus,
+	ullamcorper dui nec, pellentesque massa. Curabitur vestibulum volutpat euismod. Aliquam leo
+	neque, laoreet quis tellus non, ultrices posuere metus.
+     </p>
+     </div>
+     <div class="contentB">
+     <p>
+	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ornare nunc quis ipsum semper, ac vehicula odio rhoncus. Praesent dictum erat mauris, eget sollicitudin odio malesuada euismod. Aliquam ut ligula ante. Fusce metus metus, consequat eget condimentum et, gravida ut lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam erat volutpat. Sed lacinia, lacus efficitur gravida bibendum, augue est egestas risus, eget rhoncus arcu dui vehicula ex. Suspendisse potenti. Curabitur in ultricies lorem. Etiam ullamcorper tortor ut lacus porttitor, quis tempus dui suscipit. Donec quis ex nec metus varius gravida. Fusce bibendum sagittis fringilla. Vestibulum ante felis, aliquam quis nulla at, ullamcorper finibus massa.
+</p>
+<p>
+      Nunc eget dictum nisi. Ut sagittis efficitur mauris et maximus. Aenean pulvinar dui at turpis fermentum fermentum. Nam sed quam tellus. Cras sit amet elit non massa viverra tristique ut eu augue. Cras laoreet in metus quis fringilla. Fusce sapien lorem, porttitor vel eleifend non, gravida id libero. Praesent hendrerit rutrum volutpat. Phasellus ut suscipit quam, et dapibus turpis. Proin a sapien erat. Maecenas sollicitudin sollicitudin enim vel mollis. Donec ac porta nulla. Nullam eget elit ut lacus commodo eleifend. Maecenas vel sollicitudin lorem.
+   </p>
+   </div>
+   </article>
+   <!-- Rounded switch -->
+    <label class="switch">
+      <input type="checkbox" id="toggle">
+        <div class="slider round"></div>
+    </label>			
+ </div>
+</body>
+<script>
+$(document).ready(function(){
+
+	$("#toggle").click(function (){
+		if(this.checked) {	
+	  	  $('#A').hide();
+		  $('.contentA').hide();
+		  $('#B').show();
+		  $('.contentB').show();
+		} else {
+	  	  $('#B').hide();
+		  $('#A').show();
+		  $('.contentA').show();
+		  $('.contentB').hide();
+		}
+	});
+});
+</script>
+</html>
