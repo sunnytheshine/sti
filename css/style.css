@@ -4,7 +4,7 @@ html {
 
 body {
   background-color: #66645E;
-  font: Helvetica, sans-serif; }
+  font: arial, sans-serif; }
 
 div.container {
   width: 99%;
@@ -26,7 +26,7 @@ img.logo {
 article {
   padding: 1em;
   overflow: hidden;
-  height: 490px; }
+  height: 50%; }
 
 img.profileimg {
   width: 20%;
@@ -43,7 +43,7 @@ h3#B, div.contentB {
 
 .switch {
   position: relative;
-  left: 87%;
+  left: 80%;
   display: inline-block;
   width: 60px;
   height: 34px; }
