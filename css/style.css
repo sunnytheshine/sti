@@ -3,7 +3,8 @@ html {
   max-width: 100%; }
 
 body {
-  background-color: #66645E; }
+  background-color: #66645E;
+  font: Helvetica, sans-serif; }
 
 div.container {
   width: 99%;
