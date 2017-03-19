@@ -1,6 +1,36 @@
 $background-color: #66645E
 $font-stack: arial, sans-serif
 
+/**container
+$container-width: 99%
+$container-height: 99%
+$container-text-color: white
+
+/**logo
+$logo-margin: 1em 1em 0em 1em
+$logo-width: 8%
+$logo-height: auto
+
+/**article
+$article-height: 50%
+$article-padding: 1em
+
+/**Profile Img
+$profileimg-width: 20%
+$profileimg-margin-left: 55px
+$profileimg-margin-top: -25px
+$profileimg-height: auto
+
+/**content and title
+$content-display: none
+
+/**Switch
+$switch-position: relative
+$switch-left: 80%
+$switch-display: inline-block
+$switch-width: 60px
+$switch-height: 34px
+
 html
   margin: 0 auto
   max-width: 100%
@@ -10,10 +40,10 @@ body
   font: $font-stack
 
 div.container
-  width: 99%
-  height: 99%
+  width: $container-width
+  height: $container-height
   border: 1px solid gray
-  color: white
+  color: $container-text-color
 
 header
   padding: 1em
@@ -22,34 +52,34 @@ header
   text-align: center
 
 img.logo
-  margin: 1em 1em 0em 1em
-  width: 8%
-  height: auto
+  margin: $logo-margin
+  width: $logo-width
+  height: $logo-height
 
 article
-  padding: 1em
+  padding: $article-padding
   overflow: hidden
-  height: 50%
+  height: $article-height
 
 img.profileimg
-  width: 20%
-  margin-left: 55px
-  margin-top: -25px
+  width: $profileimg-width
+  margin-left: $profileimg-margin-left
+  margin-top: $profileimg-margin-top
   display: inline-block
-  height: auto
+  height: $profileimg-height
 
 p
   text-indent: 50px
 
 h3#B, div.contentB
-  display: none
+  display: $content-display
 
 .switch
-  position: relative
-  left: 80%
-  display: inline-block
-  width: 60px
-  height: 34px
+  position: $switch-position
+  left: $switch-left
+  display: $switch-display
+  width: $switch-width
+  height: $switch-height
   input
     display: none
 
