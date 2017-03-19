@@ -1,5 +1,6 @@
 /**container */
 /**logo */
+/**Title */
 /**article */
 /**Profile Img */
 /**content and title */
@@ -19,15 +20,21 @@ div.container {
   color: black; }
 
 header {
+  position: fixed;
   padding: 1em;
   clear: left;
   margin: 0px auto;
   text-align: center; }
 
 img.logo {
+  position: fixed;
   margin: 1em 1em 1em 1em;
   width: 8%;
   height: auto; }
+
+div#A, #B {
+  padding: 1em;
+  margin-top: 7%; }
 
 article {
   padding: 1em;
@@ -45,7 +52,7 @@ img.profileimg {
 p {
   text-indent: 50px; }
 
-h3#B, div.contentB {
+#B, div.contentB {
   display: none; }
 
 .switch {

@@ -10,6 +10,11 @@ $container-text-color: black
 $logo-margin: 1em 1em 1em 1em
 $logo-width: 8%
 $logo-height: auto
+$logo-position: fixed
+
+/**Title
+$title-padding: 1em
+$title-margin-top: 7%
 
 /**article
 $article-height: 50%
@@ -48,15 +53,21 @@ div.container
   color: $container-text-color
 
 header
+  position: $logo-position
   padding: 1em
   clear: left
   margin: 0px auto
   text-align: center
 
 img.logo
+  position: $logo-position
   margin: $logo-margin
   width: $logo-width
   height: $logo-height
+
+div#A, #B
+  padding: $title-padding
+  margin-top: $title-margin-top
 
 article
   padding: $article-padding
@@ -74,7 +85,7 @@ img.profileimg
 p
   text-indent: 50px
 
-h3#B, div.contentB
+#B, div.contentB
   display: $content-display
 
 .switch
