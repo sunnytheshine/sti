@@ -9,14 +9,14 @@ html {
   max-width: 100%; }
 
 body {
-  background-color: #66645E;
+  background-color: #82BC41;
   font: arial, sans-serif; }
 
 div.container {
   width: 99%;
   height: 99%;
   border: 1px solid gray;
-  color: white; }
+  color: black; }
 
 header {
   padding: 1em;
@@ -25,14 +25,15 @@ header {
   text-align: center; }
 
 img.logo {
-  margin: 1em 1em 0em 1em;
+  margin: 1em 1em 1em 1em;
   width: 8%;
   height: auto; }
 
 article {
   padding: 1em;
   overflow: hidden;
-  height: 50%; }
+  height: 50%;
+  background: white; }
 
 img.profileimg {
   width: 20%;
@@ -52,7 +53,8 @@ h3#B, div.contentB {
   left: 80%;
   display: inline-block;
   width: 60px;
-  height: 34px; }
+  height: 34px;
+  margin-top: 1%; }
   .switch input {
     display: none; }
 
